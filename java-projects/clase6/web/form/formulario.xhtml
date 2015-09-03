@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Formulario</title>
+    </h:head>
+    <h:body>
+        <h:outputText value="Escriba sus datos" /><br />
+        <h:form>
+            <h:outputText value="Tu nombre" />
+            <h:inputText value="#{form.nombre}" /><br />
+            <h:outputText value="correo" />
+            <h:inputText value="#{form.email}" /><br />
+            <h:outputText value="edad" />
+            <h:inputText value="#{form.edad}" /><br />
+            
+            <h:commandButton action="resp" value="enviar"></h:commandButton>
+        </h:form>
+    </h:body>
+</html>
+
